@@ -5,6 +5,7 @@ const msgErro = document.querySelector(".msg-erro");
 const displayNone = document.querySelectorAll(".display-none");
 const displayBlock = document.querySelectorAll(".display-block");
 const btnCopiar = document.querySelector(".copiar");
+
 //Regex para validar se as letras são minusculas e sem acentuação
 const regex = /^[a-z\s]+$/;
 
@@ -52,17 +53,14 @@ function descriptografar(){
 
 function mudaDisplay(){
     displayNone.forEach(elemento => {
-        //console.log(elemento.classList.replace("display-none", "display-block"))
-        console.log(elemento)
         if(elemento.classList[1] === "none"){
             elemento.classList.replace("display-none", "display-block")
         }else{
             elemento.classList.replace("display-none", "display-block")
         }
-    })
+    });
+
     displayBlock.forEach(elemento => {
-        //console.log(elemento.classList.replace("display-none", "display-block"))
-        console.log(elemento)
         if(elemento.classList[1] === "block"){
             elemento.classList.replace("display-block", "display-none")
         }else{
@@ -71,6 +69,7 @@ function mudaDisplay(){
     })
 }
 
+//função para copiar texto
 function copiarTexto(){
     navigator.clipboard.writeText(document.querySelector(".resultado textarea").value);
     btnCopiar.innerHTML = "Texto copiado";
