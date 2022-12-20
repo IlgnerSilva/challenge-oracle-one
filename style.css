@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 textarea:focus, input:focus {
@@ -25,10 +26,18 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 25%;
     background-color: rgb(255, 255, 255);
     padding: 30px;
     border-radius: 20px;
+    height: calc(100vh - 60px);
+    box-shadow: #CED4DA 0 10px 10px -3px;
+
+}
+
+.resultado img{
+    width: calc(100% - 60px);
 }
 
 .entrada-texto{
@@ -41,13 +50,14 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
-.entrada-texto input{
+.entrada-texto textarea{
     background-color: transparent;
     border: 0;
     font-size: 32px;
     color: #0A3871;
     font-weight: bolder;
     padding: 10px;
+    resize: none;
 }
 
 .div-escolha{
@@ -86,4 +96,62 @@ button {
 .msg-erro{
     color: red;
     display: none;
+}
+
+.text-resultado{
+    border: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #495057;
+}
+
+.p-principal{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: center;
+    color: #343A40;
+}
+
+.p-secundario{
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 20px;
+    color: #495057;
+}
+
+.copiar{
+    background-color: transparent;
+    color: #0A3871;
+    width: 100%;
+    display: none;
+    border: 1px solid #0A3871;
+}
+
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        display: block;
+    }
+    .entrada{
+        width: 100%;
+    }
+    .resultado{
+        width: 100%;
+    }
+    .entrada-texto{
+        width: 100%;
+    }
+    .entrada-texto textarea{
+        width: 90%;
+    }
 }

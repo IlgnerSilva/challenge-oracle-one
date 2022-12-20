@@ -14,7 +14,7 @@
                 <a href="#"><img src="./assets/img/logo.png" alt="Logo"></a>
             </div>
             <div class="entrada-texto">
-                <input type="text" placeholder="Digite seu texto">
+                <textarea wrap="hard" rows="10" type="text" placeholder="Digite seu texto"></textarea>
                 <div class="div-escolha">
                     <div class="teste">
                         <div class="msg-erro">ERRO</div>
@@ -28,10 +28,11 @@
             </div>
         </section>
         <section class="resultado">
-            <textarea name="resultado" id="" cols="30" rows="10"></textarea>
-            <img src="./assets/img/img-principal.png" alt="">
-            <p>Nenhuma mensagem encontrada</p>
-            <p>Digite o texto que você deseja criptografar ou descriptografar</p>
+            <textarea class="text-resultado display-none" name="resultado" id="" cols="30" rows="10"></textarea>
+            <img class="display-block" src="./assets/img/img-principal.png" alt="">
+            <p class="p-principal display-block">Nenhuma mensagem encontrada</p>
+            <p class="p-secundario display-block">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button class="copiar display-none">Copiar texto</button>
         </section>
     </main>
     <script src="./script.js"></script>
