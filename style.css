@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+main {
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.entrada{
+    width: 75%;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.entrada-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.entrada-texto input{
+    background-color: transparent;
+    border: 0;
+    font-size: 32px;
+    color: #0A3871;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.div-escolha{
+    width: 100%;
+    margin: 0 auto;
+}
+.teste{
+    width: 100%;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    margin: 10px;
+    width: 50%;
+    padding: 15px 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-cripto{
+    background-color: #0A3871;
+    color: white;
+    border: 1px solid transparent;
+}
+.btn-descripto{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.msg-erro{
+    color: red;
+    display: none;
+}
